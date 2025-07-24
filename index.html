@@ -1,0 +1,86 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vita Solare Energia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #0d1117; color: #e6edf3; padding: 40px; }
+    .container { max-width: 960px; margin: auto; background: #161b22; border-radius: 12px; padding: 40px; box-shadow: 0 0 15px rgba(0,0,0,0.4); }
+    h1 { font-size: 2.5rem; margin-bottom: 20px; color: #58a6ff; }
+    nav { margin-bottom: 30px; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav button { background: #21262d; border: 1px solid #30363d; color: #c9d1d9; padding: 10px 20px; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    nav button:hover { background: #30363d; }
+    .section { margin-bottom: 30px; }
+    .label { font-weight: 600; color: #8b949e; display: block; margin-top: 10px; }
+    .value { margin-left: 10px; color: #e6edf3; }
+    .highlight { color: #3fb950; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vita Solare Energia</h1>
+
+    <nav>
+      <button onclick="scrollToSection('servicos')">Serviços</button>
+      <button onclick="scrollToSection('dados')">Dados da Empresa</button>
+      <button onclick="scrollToSection('endereco')">Endereço</button>
+      <button onclick="scrollToSection('contato')">Contato</button>
+      <button onclick="scrollToSection('socios')">Sócios</button>
+    </nav>
+
+    <div id="servicos" class="section">
+      <h2>🔋 Serviços de Energia Solar</h2>
+      <p>Somos especialistas em soluções completas de energia solar fotovoltaica. Atuamos desde o projeto até a instalação e manutenção de sistemas solares residenciais, comerciais e industriais. Nossa missão é democratizar o acesso à energia limpa, reduzindo custos na conta de luz e promovendo sustentabilidade.</p>
+      <ul style="margin-top: 15px; line-height: 1.6;">
+        <li>🔧 Instalação de painéis solares on-grid e off-grid</li>
+        <li>🧠 Projetos personalizados com simulação de economia</li>
+        <li>⚙️ Manutenção e otimização de sistemas existentes</li>
+        <li>📊 Monitoramento remoto de produção de energia</li>
+        <li>🏭 Soluções corporativas e industriais para redução de custos</li>
+        <li>💼 Consultoria em financiamentos e linhas de crédito verdes</li>
+      </ul>
+    </div>
+
+    <div id="dados" class="section">
+      <h2>📄 Dados da Empresa</h2>
+      <span class="label">Razão Social:</span><span class="value">VITA SOLARE ENERGIA LTDA</span>
+      <span class="label">Nome Fantasia:</span><span class="value">VITA SOLARE ENERGIA</span>
+      <span class="label">CNPJ:</span><span class="value">57.227.983/0001‑10</span>
+      <span class="label">Status:</span><span class="value highlight">ATIVA</span>
+      <span class="label">Tipo:</span><span class="value">MATRIZ – Sociedade Empresária Limitada</span>
+      <span class="label">Abertura:</span><span class="value">10/09/2024</span>
+      <span class="label">Capital:</span><span class="value">R$ 100.000,00</span>
+      <span class="label">CNAE:</span><span class="value">77.39‑09‑9 – Aluguel de máquinas e equipamentos industriais não especificados anteriormente</span>
+    </div>
+
+    <div id="endereco" class="section">
+      <h2>📍 Endereço</h2>
+      <span class="label">Logradouro:</span><span class="value">Travessa Maria Lira, 80</span>
+      <span class="label">Bairro:</span><span class="value">São José</span>
+      <span class="label">CEP:</span><span class="value">61802‑250</span>
+      <span class="label">Município:</span><span class="value">Pacatuba – CE</span>
+    </div>
+
+    <div id="contato" class="section">
+      <h2>📞 Contato</h2>
+      <span class="label">E-mail:</span><span class="value">DUCAENERGY36@GMAIL.COM</span>
+      <span class="label">WhatsApp:</span><span class="value">(85) 98191‑3435</span>
+    </div>
+
+    <div id="socios" class="section">
+      <h2>🧑‍💼 Sócio</h2>
+      <span class="label">Nome:</span><span class="value">Ariewerton Gabriel Pereira da Silva</span>
+      <span class="label">Cargo:</span><span class="value">Sócio‑Administrador</span>
+      <span class="label">Desde:</span><span class="value">10/09/2024</span>
+    </div>
+  </div>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
